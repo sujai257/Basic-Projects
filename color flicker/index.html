@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.colourcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+input[type="number"] {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+    </style>
+</head>
+<body>
+   <div class="colourcode">#FFFFFF</div>
+   <div class="container"><input type="number" id="intervalInput" value="1" placeholder="Time Interval (seconds)">
+    <button class="change">Change</button>
+    <button class="stop">Stop</button>
+    <script src="script.js"></script></div>
+    
+    
+</body>
+</html>
